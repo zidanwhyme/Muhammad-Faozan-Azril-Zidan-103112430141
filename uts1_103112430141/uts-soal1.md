@@ -10,7 +10,7 @@ Kelas: 12-IF-05
 
 1. Kode Program
 
-Berikut adalah kode program untuk [jelaskan singkat tujuan kode, misal: "program C++ untuk mengecek bilangan ganjil/genap"].
+Berikut adalah kode program untuk mengimplementasikan single linked list
 
 (Silakan ganti bahasa dan kode di bawah ini sesuai tugas Anda)
 
