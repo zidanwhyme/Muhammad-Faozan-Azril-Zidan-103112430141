@@ -190,7 +190,7 @@ int main() {
 
 Penjelasan : main.cpp berperan sebagai program utama yang bertugas menjalankan serta menguji fitur-fitur stack yang telah diimplementasikan pada stack.h dan stack.cpp. File ini meng-include stack.h agar dapat menggunakan tipe data Stack dan seluruh fungsinya, serta meng-include untuk keperluan menampilkan output ke layar. Di dalam fungsi main(), sebuah variabel stack bernama S dibuat, lalu diinisialisasi menggunakan CreateStack(S) sehingga stack berada dalam kondisi kosong pada awal program. Setelah itu, dilakukan serangkaian percobaan operasi stack, yaitu beberapa kali Push dan Pop yang disusun dalam urutan tertentu: Push(3), Push(4), Push(8), Pop(), Push(2), Push(3), Pop(), dan Push(9). Rangkaian instruksi ini menghasilkan sebuah kondisi akhir stack yang kemudian ditampilkan dengan mencetak tulisan "Stack sebelum dibalik:" dan memanggil printInfo(S) untuk memperlihatkan isinya. Setelah tampilan pertama ini, program memanggil balikStack(S) untuk membalik susunan elemen dalam stack. Untuk menunjukkan perubahan yang terjadi, program kembali mencetak pesan "Stack sesudah dibalik:" dan memanggil printInfo(S) lagi, sehingga pengguna dapat melihat perbedaan keadaan stack sebelum dan setelah proses pembalikan dilakukan.
 Output : 
-![[2.png]]
+:![](output/1.png)
 
 
 
@@ -230,7 +230,7 @@ int main() {
 Penjelasan ::Unguided1.cpp pada dasarnya memiliki peran yang sama seperti main.cpp, yaitu berfungsi sebagai program utama yang digunakan untuk mencoba dan memastikan bahwa operasi-operasi Stack berjalan sebagaimana mestinya. File ini tetap meng-include stack.h agar dapat memanfaatkan struktur dan fungsi stack, serta meng-include untuk menampilkan keluaran ke layar. Perbedaan paling mencolok dibandingkan main.cpp adalah munculnya output "Hello World!" di awal eksekusi program, namun setelah itu alurnya kembali mengikuti pola yang sama. Program membuat sebuah variabel Stack bernama S, menginisialisasikannya dengan CreateStack(S), lalu menjalankan serangkaian instruksi stack yang identik dengan main.cpp, yaitu Push(3), Push(4), Push(8), Pop(), Push(2), Push(3), Pop(), dan Push(9). Setelah operasi tersebut dilakukan, program menampilkan kondisi stack sebelum dibalik, kemudian memanggil fungsi balikStack(S) untuk membalik urutan elemen, dan akhirnya menampilkan isi stack kembali setelah proses pembalikan selesai, sehingga perubahan susunan elemen dapat terlihat dengan jelas.
 
 Output : 
-![[1.png]]
+:![](output/2.png)
 
 
 ### 5.1 Unguided 2
@@ -260,7 +260,7 @@ int main() {
 Penjelasan ::Unguided2.cpp berfungsi sebagai program utama yang difokuskan untuk menguji kinerja fungsi pushAscending pada struktur stack yang telah dibuat. Setelah meng-include stack.h dan iostream, program mendeklarasikan sebuah Stack S kemudian menginisialisasinya dengan CreateStack(S). Berbeda dengan driver sebelumnya yang menggunakan operasi Push biasa, file ini secara khusus memanggil pushAscending dengan urutan nilai 4, 5, 9, 3, 4, dan 10. Urutan angka tersebut dipilih sebagai skenario pengujian untuk memastikan bahwa setiap penyisipan dapat menjaga agar elemen-elemen dalam stack tetap tersusun sesuai aturan ascending yang telah didefinisikan pada stack.cpp. Setelah seluruh nilai dimasukkan menggunakan pushAscending, program memanggil printInfo(S) untuk menampilkan kondisi akhir stack yang telah tertata. Sebagai tambahan pengujian, stack yang sudah terurut tersebut kemudian dibalik menggunakan fungsi balikStack(S), dan hasil akhirnya kembali ditampilkan agar terlihat jelas perubahan susunan elemen setelah proses pembalikan dilakukan.
 
 Output : 
-![[3.png]]
+:![](output/3.png)
 
 
 ### 5.1 Unguided 3
@@ -286,7 +286,7 @@ int main()
 Penjelasan :Unguided3.cpp berperan sebagai program utama yang tujuan utamanya adalah menguji cara kerja fungsi getInputStream(S). Seperti file driver lainnya, program ini menyertakan stack.h dan iostream, lalu di dalam fungsi main, sebuah Stack S dibuat dan diinisialisasi menggunakan CreateStack(S). Berbeda dari driver sebelumnya yang menggunakan data bawaan, program ini menyerahkan pengisian stack sepenuhnya kepada pengguna. Begitu getInputStream(S) dipanggil, program menunggu input berupa deretan angka yang akan dibaca dan dimasukkan satu per satu ke dalam stack sesuai mekanisme yang telah diimplementasikan. Setelah proses input selesai, printInfo(S) dipanggil untuk memperlihatkan isi stack hasil masukan pengguna. Untuk memastikan operasi lain juga berjalan dengan benar, program kemudian memanggil balikStack(S) guna membalik susunan elemen yang sudah terisi, dan menampilkan kembali hasilnya melalui printInfo(S), sehingga perbedaan kondisi stack sebelum dan sesudah pembalikan dapat dilihat dengan jelas.
 
 Output : 
-![[4.png]]
+:![](output/4.png)
 
 ## 6. Kesimpulan
 Secara ringkas, keenam program tersebut membentuk satu kesatuan sistem yang memperlihatkan bagaimana sebuah struktur data Stack statis berbasis array dirancang, direalisasikan, dan diuji. Pembagian perannya sangat terstruktur: stack.h berfungsi sebagai bagian deklaratif yang mendeskripsikan susunan Stack, yaitu array info[MaxEl] serta variabel TOP, sekaligus mencantumkan daftar fungsi yang akan digunakan. Implementasi nyata dari fungsi-fungsi tersebut berada di stack.cpp, yang menangani seluruh proses kerja stack mulai dari operasi fundamental seperti Push, Pop, IsEmpty, dan IsFull, hingga fitur tambahan seperti membalik isi stack (balikStack), menyisipkan elemen secara terurut (pushAscending), dan menerima input angka dari pengguna (getInputStream). Sementara itu, empat file lain berperan sebagai penguji yang menjalankan berbagai skenario berbeda: main.cpp dan Unguided1.cpp mengetes alur umum operasi Push/Pop dan proses pembalikan stack, Unguided2.cpp memfokuskan pengujian pada mekanisme pushAscending agar tetap mempertahankan urutan stack, dan Unguided3.cpp menitikberatkan pada pengujian proses input pengguna melalui getInputStream. Dengan pembagian seperti ini, seluruh aspek dari pembuatan hingga pengujian stack dapat diamati dengan jelas.
