@@ -78,7 +78,7 @@ return 0;
 Penjelasan : Program diatas digunakan untuk menampilkan harga suatu produk sekaligus menghitung potongan harga sebesar 10% menggunakan konsep pointer. Awalnya, variabel **hargaProduk** diisi dengan nilai 70.000. Selanjutnya, dibuat pointer **ptrHarga** yang menyimpan alamat memori dari variabel tersebut menggunakan operator **&**. Program kemudian menampilkan harga awal beserta alamat memorinya. Setelah itu, pointer dimanfaatkan untuk mengubah nilai **hargaProduk** secara langsung dengan perhitungan `*ptrHarga = *ptrHarga * 0.9`, yang berarti harga dikalikan 0,9 sebagai bentuk diskon 10%. Karena pointer terhubung langsung dengan variabel aslinya, perubahan nilai juga terjadi pada **hargaProduk**. Di akhir program, harga setelah diskon ditampilkan ke layar.
 
 Output : 
-![](2.png)
+![](output2/2.png)
 
 ### 4.3 Guided 3
 
@@ -121,7 +121,7 @@ return 0;
 
 Penjelasan : Program diatas berfungsi untuk menghitung serta menampilkan nilai seorang siswa sebelum dan sesudah memperoleh tambahan nilai (bonus). Fungsi **hitungRataRata()** digunakan untuk menghitung rata-rata dari nilai tugas dan nilai UTS dengan rumus `(nilaiTugas + nilaiUts) / 2.0f`. Selanjutnya, fungsi **cetakProfil()** bertugas menampilkan nama siswa beserta nilai yang dimilikinya. Ada juga fungsi **beriNilaiBonus()**, yang menambahkan nilai sebesar 5 melalui parameter referensi (**float& nilai**) agar perubahan nilainya langsung memengaruhi variabel aslinya. Dalam fungsi **main()**, nama siswa diatur menjadi "Kentung" dengan nilai tugas 100 dan nilai UTS 80. Program kemudian menghitung rata-rata, menampilkan data awal siswa, memberikan tambahan nilai 5 poin, lalu menampilkan kembali profil setelah bonus diterapkan.
 Output : 
-![](3.png)
+![](output2/3.png)
 
 
 
@@ -230,7 +230,7 @@ int main() {
 Penjelasan ::Program diatas dibuat untuk mengatur dan menampilkan data stok buku dengan memanfaatkan **array** serta **pointer**. Fungsi **cetakStok()** digunakan untuk menampilkan seluruh isi array stok buku dalam format yang mudah dibaca. Selanjutnya, fungsi **hitungTotalStok()** berfungsi menghitung total keseluruhan stok dengan menjumlahkan setiap elemen dalam array. Fungsi **cariStokPalingSedikit()** bertugas menemukan nilai stok terkecil dengan membandingkan tiap elemen dan mengembalikan alamat memorinya melalui pointer. Setelah itu, fungsi **tambahStokBonus()** menambah stok sebanyak 10 pada buku dengan stok paling sedikit menggunakan pointer yang dikembalikan sebelumnya. Pada bagian **main()**, data awal stok disimpan di array **stokBuku**, lalu program menampilkan stok awal, menghitung jumlah total, mencari buku dengan stok terendah, menambahkan bonus stok, dan menampilkan kembali hasil akhir setelah pembaruan dilakukan.
 
 Output : 
-![](4.png)
+![](output2/4.png)
 
 ## 6. Kesimpulan
 Dari berbagai contoh program C++ yang telah dibahas, dapat ditarik kesimpulan bahwa penguasaan konsep dasar seperti array, pointer, fungsi, referensi, dan operasi aritmetika merupakan landasan penting untuk melangkah ke tingkat pemrograman yang lebih lanjut. Array berperan dalam menyimpan serta mengelola kumpulan data dengan cara yang efisien, sedangkan **pointer** memungkinkan akses langsung ke data melalui alamat memori, sehingga memberikan fleksibilitas dan efisiensi yang lebih tinggi dalam pengolahan data. Penggunaan parameter referensi dalam fungsi memperkuat konsep modular programming karena memungkinkan perubahan nilai variabel tanpa harus membuat salinan data baru. Sementara itu, penerapan operasi aritmetika pada tipe data numerik seperti float membantu dalam memperoleh hasil perhitungan yang lebih tepat dan akurat. Dengan memahami keterkaitan antar konsep tersebut, seorang programmer dapat merancang program yang lebih efisien, terstruktur, serta mampu menyelesaikan berbagai permasalahan komputasi dengan cara yang optimal.
