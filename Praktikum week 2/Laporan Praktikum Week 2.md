@@ -44,7 +44,7 @@ int main() {
 ```
 Penjelasan : Program diatas berfungsi untuk menampilkan jumlah buku yang dibaca selama satu minggu. Data jumlah buku setiap harinya disimpan dalam array **bukuPerHari**, kemudian program menampilkan jumlah tersebut dari hari pertama hingga hari ketujuh. Selain itu, program juga menghitung total buku yang dibaca selama seminggu, namun nilai total tersebut belum muncul di output karena belum ada perintah **cout** untuk menampilkannya.
 
-Output : ![](1.png)
+Output : ![](output2/1.png)
 
 
 
