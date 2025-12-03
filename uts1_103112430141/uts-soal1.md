@@ -174,7 +174,7 @@ Menampilkan menu pilihan (insert, delete, view, hitung genap, exit), menerima in
 3. Output Program
 
 Berikut adalah hasil eksekusi program (output) ketika dijalankan.
- ![](output/Output.png)
+ ![](Output.png)
 
 4. Penjelasan Lanjutan (Analisis Output)
 
