@@ -91,7 +91,7 @@ Penjelasan : Program diatas berfungsi untuk mengubah suhu dari Celcius ke Fahren
 
 Output : 
 
-![[2.png]]
+![](output/2.png)
 
 ### 4.3 Guided 3
 
@@ -126,7 +126,7 @@ Penjelasan : Program diatas memperlihatkan cara kerja operator **prefix incremen
 
 Output : 
 
-![[3.png]]
+![](output/3.png)
 
 
 
@@ -167,7 +167,7 @@ int main(){
 Penjelasan : Program diatas menunjukkan cara melakukan operasi aritmatika dasar dengan dua bilangan bertipe float. Pertama, variabel **a** dan **b** dideklarasikan, lalu pengguna diminta memasukkan nilainya melalui **cin**. Setelah itu, program menampilkan hasil penjumlahan, pengurangan, serta perkalian. Untuk pembagian, digunakan kondisi **if-else** agar tidak terjadi pembagian dengan nol. Jika **b ≠ 0**, maka hasil **a/b** ditampilkan, sedangkan jika **b = 0**, program akan menampilkan pesan **"Error"**.
 
 Output : 
-![[4.png]]
+![](output/4.png)
 
 
 ### 5.2 Unguided 2
@@ -226,7 +226,7 @@ int main(){
 Penjelasan : Program diatas digunakan untuk mengubah angka menjadi tulisan dalam bahasa Indonesia. Ada tiga array string yang disiapkan: **satuan** (0–9), **belasan** (10–19), dan **puluhan** (20–90). Setelah pengguna memasukkan sebuah angka `n`, program akan memeriksa kondisinya. Jika `n` kurang dari 0 atau lebih dari 100, akan muncul pesan “error”. Angka 0–9 langsung diambil dari array satuan, angka 10–19 dari array belasan, sedangkan angka 20–99 diambil dari array puluhan dengan tambahan satuan jika tidak habis dibagi 10. Khusus angka 100, program langsung menampilkan kata “seratus”.
 
 Output : 
-![[5.png]]
+![](output/5.png)
 ### 5.3 Unguided 3
 
 ```cpp
@@ -273,7 +273,7 @@ int main(){
 Penjelasan : Program diatas berfungsi menampilkan pola segitiga simetris dengan angka dan tanda bintang (_). Pertama, pengguna diminta memasukkan sebuah bilangan bulat n sebagai tinggi segitiga. Proses utama dilakukan dengan perulangan bersarang. Perulangan luar mengatur jumlah baris dari n hingga 1. Di dalamnya, ada tiga langkah: mencetak spasi untuk menjaga kerapihan, menampilkan angka menurun dari i ke 1, mencetak simbol * di tengah, lalu melanjutkan dengan angka naik dari 1 ke i. Setelah itu, baris ditutup dengan endl. Sebagai penutup, program menambahkan satu baris terakhir berupa spasi sebanyak n dan sebuah bintang (_) di bagian bawah sebagai alas segitiga.
 
 Output : 
-![[6.png]]
+![](output/6.png)
 
 ## 6. Kesimpulan
 Dari berbagai program yang sudah dibuat, saya jadi lebih paham bagaimana dasar-dasar C++ bisa dipakai untuk menyelesaikan masalah sederhana. Mulai dari menghitung diskon, mengonversi suhu, operasi aritmatika, penggunaan increment, sampai mengubah angka jadi teks atau pola bintang, semuanya menunjukkan bahwa logika pemrograman saling berkaitan. Konsep seperti input-output, percabangan, perulangan, dan array menjadi pondasi utama dalam membangun solusi. Melalui latihan-latihan ini, saya semakin yakin bahwa menguasai dasar sangat penting sebelum masuk ke materi yang lebih rumit seperti struktur data atau algoritma. Selain itu, saya juga menyadari bahwa logika yang kreatif bisa membuat program lebih menarik dan mudah dipahami. Jadi, pembelajaran ini bukan hanya soal menulis kode, tapi juga melatih cara berpikir sistematis untuk menyelesaikan masalah.
