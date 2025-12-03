@@ -146,7 +146,7 @@ Penjelasan :Struktur elmlist berfungsi untuk menyimpan data serta dua pointer ya
 
 Selain itu, terdapat fungsi deleteFirst(), deleteLast(), dan deleteAfter() yang masing-masing berfungsi untuk menghapus elemen sesuai posisinya di dalam list. Pada bagian main(), program menambahkan node dengan nilai 2, 3, dan 4 di bagian depan, sehingga urutan akhir list menjadi 4 → 3 → 2. Setelah dilakukan beberapa operasi penghapusan, elemen yang tersisa akan ditampilkan kembali. Secara keseluruhan, program ini menggambarkan cara kerja dasar dari double linked list, mencakup proses penambahan, penghapusan, serta penelusuran elemen baik dari arah depan maupun belakang.
 
-Output : ![[1.png]]
+Output :![](output/1.png)
 
 
 
@@ -306,7 +306,7 @@ Penjelasan : Struktur elmlist berfungsi sebagai node yang menyimpan data serta d
 Pada fungsi main(), program dimulai dengan list yang masih kosong. Selanjutnya, tiga node dengan nilai 2, 3, dan 4 ditambahkan menggunakan fungsi penyisipan yang berbeda. Setelah semua proses selesai, urutan data di dalam list menjadi 2, 4, 3 dan hasilnya kemudian ditampilkan melalui fungsi printInfo(). Program ini menunjukkan penerapan dasar dari operasi penyisipan pada struktur double linked list.
 
 Output : 
-![[2.png]]
+:![](output/2.png)
 
 ### 4.3 Guided 3
 
@@ -553,7 +553,7 @@ int main() {
 
 Penjelasan : Program diatas memperlihatkan penerapan struktur data double linked list, di mana setiap elemen atau node (elmlist) berisi data serta dua pointer yang saling menghubungkan antar node. Struktur List berfungsi sebagai pengelola utama dengan menyimpan pointer ke elemen pertama (first) dan terakhir (last). Beberapa operasi utama yang digunakan meliputi insertFirst untuk menambah elemen di awal, insertLast untuk menambah di akhir, insertAfter untuk menyisipkan setelah node tertentu, dan insertBefore untuk menempatkan elemen sebelum node tertentu. Pada bagian main(), program membentuk list dengan urutan awal 2, 3, dan 4. Selanjutnya, elemen 5 disisipkan sebelum 2 dan elemen 6 ditempatkan sebelum 1, menghasilkan urutan akhir 6, 2, 4, 5, 3. Setelah semua operasi selesai, isi list ditampilkan dari arah depan maupun belakang untuk memastikan bahwa setiap node telah terhubung secara benar melalui pointer next dan prev.
 Output : 
-![[3.png]]
+:![](output/3.png)
 
 
 
@@ -1120,7 +1120,7 @@ int main() {
 Penjelasan ::Program diatas memanfaatkan sejumlah fungsi untuk melakukan pengelolaan data pada struktur linked list. Fungsi alokasi() digunakan untuk membuat node baru di memori, sedangkan dealokasi() berfungsi untuk menghapus node yang sudah tidak diperlukan. Operasi insertFirst() menambahkan data di bagian depan list, sementara printInfo() menampilkan seluruh elemen yang tersimpan. Untuk proses penghapusan, terdapat beberapa fungsi seperti deleteFirst() untuk menghapus node pertama, deleteLast() untuk menghapus node terakhir, deleteAfter() untuk menghapus node yang berada setelah node tertentu, deleteByValue() untuk menghapus elemen berdasarkan nilai yang dicari, serta deleteAll() untuk menghapus seluruh isi list. Pada bagian main(), program diawali dengan pembuatan list yang berisi elemen 2, 3, 4, dan 5. Setelah itu, nilai 2 dihapus dari list, program juga mencoba menghapus nilai 5 yang tidak ditemukan, kemudian menambahkan beberapa data baru, dan di akhir proses, seluruh elemen yang masih ada dihapus hingga list menjadi kosong.
 
 Output : 
-![[4.png]]
+:![](output/4.png)
 
 ## **Unguided 2**
 
@@ -1619,7 +1619,7 @@ int main() {
 ```
 Penjelasan : Program diatas terdiri dari dua fungsi utama, yaitu Smart Insert dan Conditional Delete. Fungsi Smart Insert digunakan untuk menambahkan elemen ke dalam list sesuai dengan aturan atau kondisi tertentu yang telah ditentukan sebelumnya. Secara keseluruhan, program ini memperlihatkan bagaimana Double Linked List bekerja dengan menerapkan logika penyisipan dan penghapusan elemen secara dinamis berdasarkan kondisi yang berlaku.
 
-Output : ![[5.png]]
+Output : :![](output/5.png)
 
 ## 6. Kesimpulan 
 Praktikum ini berhasil menerapkan struktur data Doubly Linked List (DLL) secara menyeluruh. Proses implementasi dimulai dari operasi dasar seperti penyisipan data (insertFirst, insertLast, insertAfter, insertBefore) dan penghapusan data (deleteFirst, deleteLast, deleteAfter), kemudian dikembangkan menjadi fungsi-fungsi dengan tingkat kompleksitas yang lebih tinggi.
